@@ -1,0 +1,46 @@
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.idx
+*.ilg
+*.ind
+*.bcf
+*.run.xml
+*.auxlock
+
+# LaTeX build directories
+*.dvi
+*.ps
+*.eps
+
+# Bibliography auxiliary files
+*.bib.bak
+*.bib.sav
+
+# Build tool files
+*.aux
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+
+.pre-commit-config.yaml
+
+# Editor backup files
+*~
+*.swp
+*.swo
+.DS_Store
+
+# PDF output (opcional - descomentar si no quieres versionear PDFs)
+# *.pdf
+
