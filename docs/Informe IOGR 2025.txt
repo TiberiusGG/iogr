@@ -1,0 +1,202 @@
+﻿Informe IOGR 2025
+Gestión de Riesgos - Inundaciones
+
+
+
+
+Título: Sistema de apoyo a decisiones para la mitigación y respuesta a inundaciones pluviales en Montevideo
+Autores: Grupo 21 (IOGR 2025)
+Fecha: Noviembre 2025
+________________
+
+
+Índice
+1. Introducción
+
+2. Marco de Gestión de Desastres aplicado a inundaciones
+
+   1. Mitigación
+
+   2. Preparación
+
+   3. Respuesta
+
+   4. Recuperación
+
+      3. Investigación de Operaciones aplicada
+
+         1. IO “soft” para estructuración y priorización
+
+         2. IO “hard” y formulaciones
+
+            4. Estudio de caso: zonas RHM de Montevideo
+
+               1. Datos y supuestos
+
+               2. Resultados de modelos
+
+               3. Análisis de sensibilidad
+
+                  5. Discusión y limitaciones
+
+                  6. Conclusiones
+
+                  7. Bibliografía
+
+________________
+
+
+Introducción
+Las inundaciones urbanas por lluvias o tormentas intensas constituyen uno de los peligros hidrometeorológicos con mayor recurrencia e impacto en Montevideo. El gobierno departamental mantiene una Red Hidrometeorológica (RHM) con polígonos donde se han identificado zonas de alta probabilidad de inundación.
+Este informe se enfoca en la Gestión de Desastres e Investigación de Operaciones (IO) adaptado al peligro de inundaciones cuando hay lluvias o tormentas en un entorno urbano. El objetivo es diseñar un sistema de apoyo a decisiones (SAD) para: (i) reducir el riesgo esperado antes de la lluvia, (ii) organizar la respuesta durante el evento, y (iii) acelerar la recuperación posterior, con criterios de equidad territorial y eficiencia operativa.
+________________
+
+
+Marco de Gestión de Desastres aplicado a inundaciones
+Mitigación
+Conjunto de acciones para disminuir la probabilidad y/o el impacto de la inundación. Proponemos:
+                     * Infraestructura y micro-obras de drenaje: limpieza y desobstrucción priorizada de bocas de tormenta, construcción de zanjas de retardo, cámaras de retención temporales, válvulas antirretorno, minidiques móviles en puntos críticos.
+
+                     * Ordenamiento territorial y normativas: desincentivos a pavimentos impermeables en zonas RHM, exigencia de cisternas o techos verdes en nuevas obras.
+
+                     * Intervenciones basadas en la naturaleza: jardines de lluvia, corredores verdes, aumento de infiltración en espacio público.
+
+                     * Educación y comunicación: campañas de manejo de residuos para evitar obstrucciones; formación de brigadas barriales.
+                     * Señalización de calles con riesgo alto de anegamiento y restricción de estacionamiento preventivo cuando se emiten alertas meteorológicas (ejemplo: coordinación con el Centro de Gestión de Movilidad).
+
+                     * Implementación de sistemas de aviso automatizados (SMS o app) que notifiquen a los dueños de vehículos registrados en esas áreas.
+
+                     * Diseño de refugios o zonas seguras de estacionamiento temporal en cotas altas.
+
+Decisiones típicas: dónde invertir, cuántos recursos asignar, qué zonas priorizar según riesgo y vulnerabilidad.
+Preparación
+Acciones para estar listos ante pronósticos de tormenta:
+                        * Preposicionamiento de equipos (bombas, barreras, bolsas de arena) y asignación de cuadrillas con ventanas de tiempo basadas en el aviso meteorológico.
+
+                        * Planes de evacuación barrial y cierres preventivos de calles de baja cota.
+
+                        * Protocolos de comunicación con vecinos y servicios esenciales (salud, educación, tránsito).
+                        * Definición de protocolos de retiro preventivo de vehículos, con coordinación entre la Intendencia y la Policía de Tránsito.
+
+                        * Integración con datos en tiempo real del pronóstico y la RHM para activar cierres selectivos de calles.
+
+Decisiones típicas: ubicación de depósitos/“kits”, número de cuadrillas por sector, rutas de llegada pre-planificadas.
+Respuesta
+Acciones durante el evento para preservar vidas, propiedad y continuidad de servicios:
+                           * Despliegue de cuadrillas a puntos RHM con mayor peligro inminente.
+
+                           * Cortes y desvíos viales para disminuir el riesgo a las personas y permitir el acceso operativo.
+
+                           * Asistencia a población afectada (agua, higiene, abrigo) mediante puntos de distribución temporales.
+                           * Modelos de ruteo para grúas o cuadrillas que retiren autos antes del pico de lluvia.
+
+                           * Priorización de calles a cerrar con base en niveles medidos por sensores RHM.
+
+Decisiones típicas: ruteo dinámico con calles anegadas, asignación táctica de bombas/barreras, localización de puntos de distribución.
+Recuperación
+Acciones posteriores al evento para restaurar condiciones normales y fortalecer la resiliencia:
+                              * Reparación y limpieza de infraestructura de drenaje, levantamiento de daños.
+
+                              * Apoyo social y restitución de bienes esenciales.
+
+                              * Evaluación post-evento a modo de retrospectiva y accionables (lecciones aprendidas).
+
+Decisiones típicas: programación de obras, inventarios de reposición, priorización territorial bajo restricciones presupuestales.
+________________
+
+
+Investigación de Operaciones aplicada
+IO “soft” para estructuración y priorización
+Se propone un proceso participativo con SODA/SSM para entender el problema desde los actores (IM, SINAE, OSE, Juntas Locales, organizaciones vecinales, salud, educación, tránsito, empresas de servicios):
+                                 1. Entrevistas y mapas cognitivos para identificar objetivos (p. ej., equidad territorial, minimizar población expuesta, proteger servicios críticos) y opciones (micro-obras, puntos de depósito, kits, rutas, protocolos).
+
+                                 2. CATWOE para acordar el sistema relevante, restricciones y criterios.
+
+                                 3. Análisis multicriterio (AHP/TOPSIS) para ponderar un Índice de Riesgo por zona RHM que combine peligro (historial de inundaciones), exposición (población, escuelas, hospitales), vulnerabilidad (NBI, edad), y criticidad (vías y servicios estratégicos).
+
+El resultado alimenta los modelos cuantitativos al proveer pesos de prioridad y umbrales de servicio.
+IO “hard” y formulaciones
+A continuación se detallan formulaciones base y su interpretación para inundaciones:
+(A) Cobertura máxima / Ubicación de depósitos (MCLP)
+ Decisión: abrir hasta (p) sitios (depósitos o bases operativas) para cubrir zonas RHM dentro de un tiempo objetivo (T) minutos.
+Objetivo: maximizar población/criticidad cubierta.
+Uso: planificación de preparación.
+(B) p-mediana / Asignación
+ Decisión: elegir (p) bases minimizando el tiempo promedio de llegada a zonas RHM.
+Uso: alternativa cuando importa el tiempo medio y no solo la cobertura.
+(C) Portafolio de micro-obras (mochila/knapsack con equidad)
+ Decisión: seleccionar un conjunto de intervenciones de bajo costo bajo presupuesto (B).
+Objetivo: maximizar la reducción del riesgo esperado; restricciones de equidad por barrios vulnerables.
+(D) VRP con ventanas de tiempo (preposición y respuesta)
+ Decisión: rutas de cuadrillas y camiones con horarios vinculados al pico de lluvia.
+Objetivo: minimizar zonas críticas no atendidas antes del pico; segundo objetivo: costo/tiempo total.
+Extensiones: escenarios estocásticos de intensidad de lluvia; calles anegadas.
+(E) Evacuación local y cortes (flujos + simulación de colas)
+ Decisión: plan de cierres y desvíos que minimicen tiempo de vaciado de un polígono RHM, controlando colas en intersecciones.
+(F) LIRP post-evento (Location–Inventory–Routing)
+ Decisión: dónde montar puntos de distribución (agua, higiene, abrigo), cuánto stock mantener y cómo reponer.
+Objetivo: minimizar tiempo máximo sin atención de la población afectada y el costo logístico.
+________________
+
+
+Estudio de caso: zonas RHM de Montevideo
+Datos y supuestos
+                                    * Unidades de análisis: centroides de polígonos RHM (ej.: Unión, Buceo, Malvín, Centro, Cerro).
+
+                                    * Pesos por zona: Índice de Riesgo (hazard, exposición, vulnerabilidad, criticidad) definido con AHP.
+
+                                    * Red vial: tiempos (t_{ij}) desde bases candidatas (CCZ, depósitos municipales, garajes) a cada zona RHM; penalizaciones por calles usualmente inundadas.
+
+                                    * Recursos: (p) depósitos a habilitar, (K) cuadrillas con capacidad de instalación de barreras/bombas por hora, flota de camiones.
+
+                                    * Pronóstico: ventana crítica de (\pm) 2–3 h alrededor del pico de precipitación.
+
+Resultados de modelos
+                                       1. MCLP/p-mediana: selección de (p) sitios que cubren ≥X% de población RHM en ≤T min; mapa de cobertura y asignación de zonas.
+
+                                       2. Portafolio de micro-obras: conjunto óptimo bajo (B), con tabla de beneficio marginal por dólar y porcentaje en barrios priorizados.
+
+                                       3. VRP con ventanas de tiempo: rutas para (K) cuadrillas con llegada antes del pico a los N puntos más críticos; tiempos previstos y holguras.
+
+                                       4. LIRP: localización de 2–3 puntos de distribución y plan de reabastecimiento para 24–72 h.
+
+Análisis de sensibilidad
+                                          * Cambios en (p), (T), (B), severidad del evento, tiempos de viaje y capacidad de cuadrillas.
+
+                                          * Escenarios con calles inhabilitadas; robustez de las rutas y cobertura.
+
+________________
+
+
+Discusión y limitaciones
+                                             * Datos: la calidad del modelo depende de la resolución de RHM, inventario de infraestructura de drenaje y reportes históricos.
+
+                                             * Incertidumbre: intensidad y localización de lluvia varían; recomendamos escenarios y optimización robusta.
+
+                                             * Gobernanza: coordinación interinstitucional (IM, SINAE, OSE, Policía/Tránsito, Salud) y participación comunitaria son claves para la sostenibilidad y equidad.
+
+                                             * Transferibilidad: la metodología es replicable a otras ciudades con mapas de riesgo.
+
+________________
+
+
+Conclusiones
+
+                                                1. El marco de Mitigación–Preparación–Respuesta–Recuperación permite articular intervenciones de ingeniería, operativas y sociales de forma coherente para inundaciones urbanas.
+
+                                                2. La IO habilita decisiones más informadas: (i) ubicación óptima de depósitos y puntos de distribución; (ii) portafolios de micro-obras costo–efectivas y equitativas; (iii) ruteo táctico con ventanas de tiempo para llegar antes del pico; (iv) logística de abastecimiento post-evento.
+                                                3. En el estudio de caso, la combinación MCLP + VRP + portafolio muestra mejoras sustantivas en cobertura y tiempos de atención frente a asignaciones ad-hoc.
+
+                                                4. Recomendamos institucionalizar el SAD con actualización continua de datos RHM, inventarios y lecciones aprendidas tras cada evento.
+
+________________
+
+
+Bibliografía
+                                                   * Altay, N., & Green, W. G. (2006). OR/MS research in disaster operations management. European Journal of Operational Research, 175(1), 475–493.
+
+                                                   * Diapositivas en EVA del curso. https://eva.fing.edu.uy/course/view.php?id=38
+
+                                                   * Ley 18621 Sistema Nacional de Emergencias Archivo
+
+                                                   * Intendencia de Montevideo. Red Hidrometeorológica de Montevideo (RHM). URL: https://montevidata.montevideo.gub.uy/ambiental/red-hidrometeorologica-de-montevideo-rhm

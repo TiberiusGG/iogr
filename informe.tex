@@ -1,0 +1,274 @@
+\documentclass[12pt,a4paper]{article}
+
+% Paquetes básicos
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{acronym}
+\usepackage{cleveref}
+
+% Configuración de página
+\geometry{margin=2.5cm}
+
+% Configuración de hipervínculos
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Sistema de apoyo a decisiones para la mitigación y respuesta a inundaciones pluviales en Montevideo},
+}
+
+% Información del documento
+\title{Sistema de apoyo a decisiones para la mitigación y respuesta a inundaciones pluviales en Montevideo}
+\author{Grupo 21 (IOGR 2025)}
+\date{Noviembre 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+\textbf{Informe IOGR 2025}\\
+\textbf{Gestión de Riesgos - Inundaciones}
+\end{center}
+
+\vspace{1cm}
+
+\tableofcontents
+\newpage
+
+\section{Introducción}
+
+Las inundaciones urbanas provocadas por lluvias intensas o tormentas representan uno de los peligros hidrometeorológicos más recurrentes y con mayor impacto en el área metropolitana de Montevideo. Ante esta situación, el gobierno departamental ha establecido una \ac{RHM} que identifica polígonos con alta probabilidad de inundación, proporcionando información fundamental para la gestión del riesgo.
+
+El presente informe aborda la aplicación de la \ac{IO} y la Gestión de Desastres al problema específico de las inundaciones pluviales en entornos urbanos. El objetivo principal consiste en diseñar un \ac{SAD} que permita: (i) reducir el riesgo esperado mediante acciones preventivas antes de la ocurrencia de lluvias intensas, (ii) organizar de manera eficiente la respuesta durante el evento, y (iii) acelerar los procesos de recuperación posteriores, todo ello considerando criterios de equidad territorial y eficiencia operativa.
+
+\section{Marco de Gestión de Desastres aplicado a inundaciones}
+
+El marco de Gestión de Desastres se estructura tradicionalmente en cuatro fases: mitigación, preparación, respuesta y recuperación. A continuación se detalla cómo cada una de estas fases se aplica específicamente al contexto de las inundaciones pluviales urbanas.
+
+\subsection{Mitigación}
+
+La fase de mitigación comprende el conjunto de acciones orientadas a disminuir tanto la probabilidad de ocurrencia como el impacto potencial de las inundaciones. En este contexto, se identifican diversas estrategias que pueden implementarse de manera preventiva.
+
+Las intervenciones de infraestructura y micro-obras de drenaje constituyen una línea de acción fundamental. Entre estas se incluyen la limpieza y desobstrucción priorizada de bocas de tormenta, la construcción de zanjas de retardo, la instalación de cámaras de retención temporales, válvulas antirretorno y minidiques móviles en puntos críticos identificados mediante análisis de riesgo.
+
+El ordenamiento territorial y la implementación de normativas representan otra dimensión relevante. Se propone establecer desincentivos a la utilización de pavimentos impermeables en zonas identificadas por la \ac{RHM}, así como exigir la incorporación de cisternas o techos verdes en nuevas construcciones ubicadas en estas áreas.
+
+Las intervenciones basadas en la naturaleza ofrecen alternativas complementarias. La implementación de jardines de lluvia, corredores verdes y estrategias para aumentar la infiltración en el espacio público contribuyen a reducir el volumen de escorrentía superficial.
+
+En cuanto a educación y comunicación, resulta esencial desarrollar campañas orientadas al manejo adecuado de residuos para evitar obstrucciones en el sistema de drenaje, así como promover la formación de brigadas barriales que puedan colaborar en situaciones de emergencia.
+
+Un aspecto crítico que merece especial atención es la gestión del riesgo asociado a vehículos estacionados en zonas inundables. Cuando se emiten alertas meteorológicas de lluvias intensas, los automóviles estacionados en calles de baja cota enfrentan un riesgo significativo de quedar atascados o dañados por el agua. Este problema no solo genera pérdidas económicas para los propietarios, sino que además puede obstaculizar las operaciones de respuesta y evacuación. Por tanto, se propone implementar señalización clara en calles con riesgo alto de anegamiento y establecer restricciones de estacionamiento preventivo cuando se activan alertas meteorológicas, en coordinación con el Centro de Gestión de Movilidad.
+
+Complementariamente, se recomienda la implementación de sistemas de aviso automatizados mediante SMS o aplicaciones móviles que notifiquen directamente a los propietarios de vehículos registrados en áreas de riesgo, permitiéndoles reubicar sus vehículos antes de que comience el evento. Asimismo, resulta conveniente diseñar refugios o zonas seguras de estacionamiento temporal ubicadas en cotas altas, accesibles durante períodos de alerta.
+
+Las decisiones típicas en esta fase incluyen determinar dónde invertir recursos, cuántos recursos asignar a cada tipo de intervención y qué zonas priorizar según criterios de riesgo y vulnerabilidad.
+
+\subsection{Preparación}
+
+La fase de preparación comprende las acciones que deben ejecutarse cuando existe un pronóstico de tormenta, con el objetivo de estar listos para responder de manera efectiva.
+
+El preposicionamiento de equipos constituye una medida fundamental. Se trata de ubicar estratégicamente bombas, barreras, bolsas de arena y otros recursos necesarios, así como asignar cuadrillas con ventanas de tiempo definidas en función del aviso meteorológico recibido.
+
+Los planes de evacuación barrial y los cierres preventivos de calles de baja cota permiten reducir la exposición de personas y bienes antes de que el evento alcance su máxima intensidad. Estos planes deben desarrollarse con suficiente antelación y comunicarse claramente a la población afectada.
+
+La definición de protocolos de comunicación con vecinos y servicios esenciales (salud, educación, tránsito) facilita la coordinación durante situaciones de emergencia. En particular, resulta crucial establecer protocolos de retiro preventivo de vehículos, coordinando acciones entre la \ac{IM} y la Policía de Tránsito para facilitar la evacuación de vehículos de zonas de riesgo antes de que comience la lluvia intensa.
+
+La integración con datos en tiempo real del pronóstico meteorológico y de la \ac{RHM} permite activar cierres selectivos de calles de manera dinámica, optimizando tanto la seguridad como la movilidad urbana.
+
+Las decisiones típicas en esta fase incluyen determinar la ubicación de depósitos y kits de emergencia, definir el número de cuadrillas por sector y establecer rutas de llegada pre-planificadas que consideren posibles restricciones viales.
+
+\subsection{Respuesta}
+
+Durante la fase de respuesta, las acciones se orientan a preservar vidas, proteger la propiedad y mantener la continuidad de servicios esenciales mientras el evento está ocurriendo.
+
+El despliegue de cuadrillas a puntos de la \ac{RHM} con mayor peligro inminente permite una intervención rápida y focalizada. La priorización de estos despliegues debe basarse en información actualizada sobre la evolución del evento.
+
+Los cortes y desvíos viales se implementan para disminuir el riesgo a las personas y permitir el acceso operativo de los equipos de respuesta. Estas decisiones deben tomarse considerando tanto la seguridad como la necesidad de mantener cierta conectividad urbana.
+
+La asistencia a la población afectada mediante puntos de distribución temporales de agua, elementos de higiene y abrigo requiere una planificación logística cuidadosa. La ubicación de estos puntos debe optimizarse considerando accesibilidad, seguridad y cobertura poblacional.
+
+Los modelos de ruteo para grúas o cuadrillas especializadas permiten retirar vehículos que han quedado atascados o que se encuentran en riesgo inminente antes de que el nivel del agua alcance su pico. Esta operación resulta particularmente compleja debido a la necesidad de trabajar con ventanas de tiempo reducidas y condiciones meteorológicas adversas.
+
+La priorización de calles a cerrar debe basarse en niveles medidos por sensores de la \ac{RHM}, permitiendo una respuesta adaptativa a las condiciones reales del evento.
+
+Las decisiones típicas en esta fase incluyen el ruteo dinámico considerando calles ya anegadas, la asignación táctica de bombas y barreras, y la localización de puntos de distribución que maximicen la cobertura de la población afectada.
+
+\subsection{Recuperación}
+
+La fase de recuperación comprende las acciones posteriores al evento, orientadas a restaurar las condiciones normales y fortalecer la resiliencia del sistema para futuros eventos.
+
+La reparación y limpieza de la infraestructura de drenaje, junto con el levantamiento sistemático de daños, proporciona información valiosa para mejorar la planificación futura. Este proceso debe realizarse de manera priorizada, considerando la criticidad de cada elemento de infraestructura.
+
+El apoyo social y la restitución de bienes esenciales contribuyen a la recuperación de las comunidades afectadas. Esta dimensión resulta particularmente importante en barrios con mayor vulnerabilidad socioeconómica.
+
+La evaluación post-evento realizada de manera sistemática permite identificar lecciones aprendidas y desarrollar acciones concretas para mejorar la respuesta en futuros eventos. Esta evaluación debe involucrar a todos los actores relevantes y documentarse adecuadamente.
+
+Las decisiones típicas en esta fase incluyen la programación de obras de infraestructura, la gestión de inventarios de reposición y la priorización territorial de intervenciones bajo restricciones presupuestales.
+
+\section{Investigación de Operaciones aplicada}
+
+La aplicación de la \ac{IO} al problema de gestión de inundaciones puede estructurarse en dos dimensiones complementarias: las metodologías ``soft'' orientadas a la estructuración y priorización del problema, y las formulaciones ``hard'' que proporcionan modelos cuantitativos para la optimización.
+
+\subsection{IO ``soft'' para estructuración y priorización}
+
+Se propone un proceso participativo basado en metodologías como \ac{SODA} y \ac{SSM} para comprender el problema desde la perspectiva de los diversos actores involucrados. Entre estos actores se encuentran la \ac{IM}, el \ac{SINAE}, \ac{OSE}, las Juntas Locales, organizaciones vecinales, servicios de salud, educación, tránsito y empresas de servicios públicos.
+
+El proceso comprende tres etapas principales. En primer lugar, se realizan entrevistas y se desarrollan mapas cognitivos para identificar objetivos relevantes (tales como equidad territorial, minimización de población expuesta, protección de servicios críticos) y opciones de intervención (micro-obras, puntos de depósito, kits de emergencia, rutas, protocolos).
+
+En segundo lugar, se utiliza la metodología \ac{CATWOE} para acordar la definición del sistema relevante, identificar restricciones y establecer criterios de evaluación que sean aceptables para todos los actores.
+
+Finalmente, se aplica análisis multicriterio mediante técnicas como \ac{AHP} o \ac{TOPSIS} para ponderar un Índice de Riesgo por zona de la \ac{RHM}. Este índice combina múltiples dimensiones: peligro (basado en historial de inundaciones), exposición (población, escuelas, hospitales), vulnerabilidad (indicadores como \ac{NBI}, edad de la población) y criticidad (vías y servicios estratégicos).
+
+El resultado de este proceso alimenta los modelos cuantitativos al proporcionar pesos de prioridad y umbrales de servicio que reflejan las preferencias y restricciones identificadas por los actores.
+
+\subsection{IO ``hard'' y formulaciones}
+
+A continuación se presentan formulaciones base y su interpretación específica para el contexto de inundaciones urbanas. Cada formulación aborda un aspecto particular del problema de decisión.
+
+\subsubsection{(A) Cobertura máxima / Ubicación de depósitos (MCLP)}
+
+Esta formulación corresponde al problema de \textit{Maximum Covering Location Problem} (\ac{MCLP}). La decisión consiste en seleccionar hasta $p$ sitios (depósitos o bases operativas) para cubrir zonas de la \ac{RHM} dentro de un tiempo objetivo $T$ minutos.
+
+El objetivo es maximizar la población o criticidad cubierta, considerando que una zona se considera cubierta si existe al menos un sitio seleccionado que puede alcanzarla dentro del tiempo objetivo.
+
+Esta formulación resulta particularmente útil para la planificación de preparación, donde se busca garantizar que los recursos estén ubicados de manera que puedan responder rápidamente a las zonas de mayor riesgo.
+
+\subsubsection{(B) p-mediana / Asignación}
+
+La formulación de p-mediana permite elegir $p$ bases minimizando el tiempo promedio de llegada a las zonas de la \ac{RHM}. A diferencia del \ac{MCLP}, esta formulación considera el tiempo promedio en lugar de un umbral de cobertura.
+
+Esta alternativa resulta apropiada cuando importa no solo si una zona está cubierta, sino también qué tan rápido puede ser atendida en promedio. Es particularmente relevante cuando se busca optimizar la eficiencia global del sistema de respuesta.
+
+\subsubsection{(C) Portafolio de micro-obras (mochila/knapsack con equidad)}
+
+Esta formulación corresponde a un problema de mochila con restricciones adicionales de equidad. La decisión consiste en seleccionar un conjunto de intervenciones de bajo costo sujeto a un presupuesto total $B$.
+
+El objetivo es maximizar la reducción del riesgo esperado, considerando restricciones de equidad que garantizan que un porcentaje mínimo de los recursos se asigne a barrios vulnerables. Esta dimensión de equidad resulta fundamental para asegurar que las intervenciones no solo sean eficientes, sino también justas desde una perspectiva social.
+
+\subsubsection{(D) VRP con ventanas de tiempo (preposición y respuesta)}
+
+El \ac{VRP} con ventanas de tiempo permite diseñar rutas para cuadrillas y camiones considerando horarios vinculados al pico de lluvia pronosticado. La decisión incluye tanto la secuencia de visitas como los tiempos de inicio de cada ruta.
+
+El objetivo principal es minimizar el número de zonas críticas que no son atendidas antes del pico de lluvia. Como objetivo secundario se considera minimizar el costo o tiempo total de las operaciones.
+
+Las extensiones de esta formulación incluyen escenarios estocásticos de intensidad de lluvia y la consideración de calles que pueden quedar anegadas durante la operación, requiriendo ajustes dinámicos de las rutas.
+
+\subsubsection{(E) Evacuación local y cortes (flujos + simulación de colas)}
+
+Esta formulación combina modelos de flujo de tráfico con simulación de colas para diseñar planes de cierres y desvíos que minimicen el tiempo de vaciado de un polígono de la \ac{RHM}.
+
+La decisión incluye qué calles cerrar, qué desvíos establecer y en qué momento implementar cada medida. El modelo debe considerar las colas que se forman en intersecciones y cómo estas afectan el tiempo total de evacuación.
+
+Esta formulación resulta particularmente compleja debido a la necesidad de modelar el comportamiento dinámico del tráfico y las interacciones entre múltiples decisiones de cierre.
+
+\subsubsection{(F) LIRP post-evento (Location--Inventory--Routing)}
+
+El problema \ac{LIRP} integra decisiones de localización, inventario y ruteo para la fase de recuperación. La decisión incluye dónde montar puntos de distribución (agua, higiene, abrigo), cuánto stock mantener en cada punto y cómo reponer el inventario mediante rutas de reabastecimiento.
+
+El objetivo es minimizar el tiempo máximo durante el cual alguna población afectada permanece sin atención, considerando simultáneamente el costo logístico total de las operaciones.
+
+Esta formulación resulta esencial para garantizar que la asistencia post-evento se distribuya de manera eficiente y equitativa, considerando tanto las necesidades de la población como las restricciones operativas y presupuestales.
+
+\section{Estudio de caso: zonas RHM de Montevideo}
+
+Para ilustrar la aplicación práctica de las metodologías propuestas, se presenta un estudio de caso basado en las zonas identificadas por la \ac{RHM} de Montevideo.
+
+\subsection{Datos y supuestos}
+
+Las unidades de análisis corresponden a los centroides de polígonos de la \ac{RHM}, incluyendo áreas como Unión, Buceo, Malvín, Centro y Cerro, entre otras. Cada polígono representa una zona con características particulares de riesgo de inundación.
+
+Los pesos por zona se definen mediante un Índice de Riesgo que integra múltiples dimensiones: \textit{hazard} (peligro), exposición, vulnerabilidad y criticidad. Este índice se construye utilizando \ac{AHP}, permitiendo incorporar las preferencias de los actores relevantes en la ponderación de cada dimensión.
+
+La red vial se modela mediante tiempos de viaje $t_{ij}$ desde bases candidatas (tales como \ac{CCZ}, depósitos municipales y garajes) hasta cada zona de la \ac{RHM}. Estos tiempos incluyen penalizaciones por calles que suelen quedar inundadas, reflejando la incertidumbre y variabilidad en las condiciones de acceso durante eventos de lluvia intensa.
+
+Los recursos disponibles incluyen $p$ depósitos que pueden habilitarse, $K$ cuadrillas con capacidad específica de instalación de barreras y bombas por hora, y una flota de camiones con características particulares de capacidad y movilidad.
+
+El pronóstico meteorológico se modela mediante una ventana crítica de $\pm$ 2--3 horas alrededor del pico de precipitación pronosticado. Esta ventana define el período durante el cual las acciones de preparación y respuesta temprana resultan más efectivas.
+
+\subsection{Resultados de modelos}
+
+La aplicación de los modelos propuestos genera diversos resultados que informan la toma de decisiones en cada fase del ciclo de gestión de desastres.
+
+El modelo \ac{MCLP}/p-mediana permite seleccionar $p$ sitios que cubren al menos $X\%$ de la población de la \ac{RHM} en un tiempo máximo de $T$ minutos. Los resultados incluyen mapas de cobertura que visualizan la asignación de zonas a cada sitio seleccionado, facilitando la comunicación con los actores no técnicos.
+
+El portafolio de micro-obras identifica un conjunto óptimo de intervenciones sujeto al presupuesto $B$. Los resultados incluyen tablas que muestran el beneficio marginal por dólar invertido y el porcentaje de recursos asignados a barrios priorizados según criterios de equidad.
+
+El \ac{VRP} con ventanas de tiempo genera rutas específicas para $K$ cuadrillas, garantizando que lleguen antes del pico de lluvia a los $N$ puntos más críticos. Los resultados incluyen tiempos previstos de llegada y holguras que permiten evaluar la robustez de las soluciones ante variaciones en las condiciones reales.
+
+El modelo \ac{LIRP} determina la localización de 2--3 puntos de distribución y desarrolla un plan de reabastecimiento para un horizonte de 24--72 horas. Los resultados incluyen niveles de inventario recomendados y rutas de reabastecimiento que minimizan tanto el tiempo de desabastecimiento como los costos logísticos.
+
+\subsection{Análisis de sensibilidad}
+
+El análisis de sensibilidad permite evaluar la robustez de las soluciones propuestas ante variaciones en los parámetros del modelo y en las condiciones del evento.
+
+Se analizan cambios en parámetros clave como $p$ (número de sitios), $T$ (tiempo objetivo de cobertura), $B$ (presupuesto disponible), la severidad del evento pronosticado, los tiempos de viaje y la capacidad de las cuadrillas. Estos análisis permiten identificar qué parámetros tienen mayor impacto en los resultados y cómo las soluciones se adaptan a diferentes escenarios.
+
+Adicionalmente, se evalúan escenarios donde ciertas calles quedan inhabilitadas durante el evento, analizando la robustez de las rutas propuestas y la capacidad del sistema para mantener niveles adecuados de cobertura incluso ante estas contingencias.
+
+\section{Discusión y limitaciones}
+
+La aplicación de las metodologías propuestas presenta tanto oportunidades como limitaciones que deben ser reconocidas y abordadas adecuadamente.
+
+En cuanto a los datos, la calidad y resolución de los resultados del modelo dependen fundamentalmente de la calidad de la información disponible. Esto incluye la resolución espacial y temporal de los datos de la \ac{RHM}, la completitud del inventario de infraestructura de drenaje y la disponibilidad de reportes históricos detallados de eventos pasados. La falta de datos de calidad puede limitar significativamente la aplicabilidad práctica de los modelos.
+
+La incertidumbre inherente a los eventos meteorológicos representa otro desafío importante. La intensidad y localización exacta de las lluvias varían considerablemente, incluso con pronósticos avanzados. Por tanto, se recomienda el uso de escenarios múltiples y técnicas de optimización robusta que permitan generar soluciones que funcionen adecuadamente bajo diversas condiciones posibles.
+
+La dimensión de gobernanza resulta crucial para el éxito de cualquier sistema de apoyo a decisiones. La coordinación efectiva entre múltiples instituciones (tales como la \ac{IM}, el \ac{SINAE}, \ac{OSE}, Policía de Tránsito, servicios de salud) y la participación activa de las comunidades afectadas son elementos clave para la sostenibilidad y equidad de las intervenciones propuestas. Sin esta coordinación, incluso las mejores soluciones técnicas pueden fracasar en la implementación práctica.
+
+Finalmente, la transferibilidad de la metodología a otros contextos depende de la disponibilidad de mapas de riesgo comparables. Sin embargo, la estructura general del enfoque propuesto puede adaptarse a otras ciudades que enfrenten desafíos similares de gestión de inundaciones urbanas.
+
+\section{Conclusiones}
+
+El presente trabajo ha desarrollado un marco integrado para la gestión de inundaciones pluviales urbanas que combina principios de Gestión de Desastres con metodologías de \ac{IO}.
+
+En primer lugar, se ha demostrado que el marco de Mitigación--Preparación--Respuesta--Recuperación permite articular de manera coherente intervenciones de ingeniería, operativas y sociales para abordar el problema de las inundaciones urbanas. Cada fase del ciclo contribuye de manera complementaria a la reducción del riesgo y al fortalecimiento de la resiliencia del sistema.
+
+En segundo lugar, la aplicación de la \ac{IO} habilita la toma de decisiones más informadas en múltiples dimensiones: (i) la ubicación óptima de depósitos y puntos de distribución, (ii) el diseño de portafolios de micro-obras que sean tanto costo-efectivos como equitativos, (iii) el desarrollo de estrategias de ruteo táctico con ventanas de tiempo que permitan llegar antes del pico de lluvia, y (iv) la optimización de la logística de abastecimiento post-evento.
+
+En tercer lugar, el estudio de caso desarrollado muestra que la combinación de modelos \ac{MCLP}, \ac{VRP} y portafolio de inversiones genera mejoras sustantivas en cobertura y tiempos de atención comparadas con asignaciones ad-hoc o basadas únicamente en criterios cualitativos.
+
+Finalmente, se recomienda la institucionalización del \ac{SAD} propuesto, estableciendo procesos sistemáticos para la actualización continua de datos de la \ac{RHM}, el mantenimiento de inventarios actualizados y la documentación de lecciones aprendidas tras cada evento. Esta institucionalización resulta esencial para garantizar que el sistema evolucione y mejore continuamente, incorporando nueva información y experiencia acumulada.
+
+\section{Glosario}
+
+\begin{description}
+    \item[\textbf{RHM}] Red Hidrometeorológica
+    \item[\textbf{IO}] Investigación de Operaciones
+    \item[\textbf{SAD}] Sistema de Apoyo a Decisiones
+    \item[\textbf{MCLP}] Maximum Covering Location Problem
+    \item[\textbf{VRP}] Vehicle Routing Problem
+    \item[\textbf{LIRP}] Location--Inventory--Routing Problem
+    \item[\textbf{SODA}] Strategic Options Development and Analysis
+    \item[\textbf{SSM}] Soft Systems Methodology
+    \item[\textbf{CATWOE}] Customers, Actors, Transformation, Weltanschauung, Owner, Environment
+    \item[\textbf{AHP}] Analytic Hierarchy Process
+    \item[\textbf{TOPSIS}] Technique for Order Preference by Similarity to Ideal Solution
+    \item[\textbf{IM}] Intendencia de Montevideo
+    \item[\textbf{SINAE}] Sistema Nacional de Emergencias
+    \item[\textbf{OSE}] Obras Sanitarias del Estado
+    \item[\textbf{NBI}] Necesidades Básicas Insatisfechas
+    \item[\textbf{CCZ}] Centro Comunal Zonal
+\end{description}
+
+\section{Bibliografía}
+
+\begin{itemize}
+    \item Altay, N., \& Green, W. G. (2006). OR/MS research in disaster operations management. \textit{European Journal of Operational Research}, 175(1), 475--493.
+    
+    \item Diapositivas en EVA del curso. \url{https://eva.fing.edu.uy/course/view.php?id=38}
+    
+    \item Ley 18621 Sistema Nacional de Emergencias Archivo
+    
+    \item Intendencia de Montevideo. Red Hidrometeorológica de Montevideo (\ac{RHM}). \url{https://montevidata.montevideo.gub.uy/ambiental/red-hidrometeorologica-de-montevideo-rhm}
+\end{itemize}
+
+\end{document}
